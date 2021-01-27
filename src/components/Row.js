@@ -35,7 +35,7 @@ function Row({ title, fetchUrl, isLargeRow }) {
     } else {
       console.log(movie);
       let trailerurl = await axios.get(
-        `/movie/${movie.id}/videos?api_key=caf2d9007cb0a683ca9ee81472e34030`
+        `/movie/${movie.id}/videos?api_key=${process.env.REACT_APP_API_KEY}`
       );
       setTrailerUrl(trailerurl.data.results[0]?.key);
     }
