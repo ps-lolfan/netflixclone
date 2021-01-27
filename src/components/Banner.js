@@ -40,8 +40,8 @@ function Banner() {
 
         {/* 2 buttons */}
         <div className="banner_buttons">
-          <button className="banner_button">Play</button>
-          <button className="banner_button">My List </button>
+          {/* <button className="banner_button">Play</button> */}
+          {/* <button className="banner_button">My List </button> */}
         </div>
 
         {/* description */}
